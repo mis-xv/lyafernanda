@@ -12,7 +12,7 @@ window.sr = ScrollReveal();
 
 	sr.reveal('.nombres', {
 		duration: 2000, //tiempo
-		//delay:1500,
+		delay:700,
 		origin: 'top', //origen
 		scale: 0.10,
 		distance: '-0' //distancia
@@ -41,7 +41,7 @@ window.sr = ScrollReveal();
 
 	sr.reveal('.nuestraBoda', {
 		duration: 2000, //tiempo
-		//delay:1500,
+		delay:500,
 		origin: 'top', //origen
 		distance: '100px', //distancia
 		
@@ -194,8 +194,8 @@ window.sr = ScrollReveal();
 
 	}); 
 sr.reveal('.nosCasamos', {
-		duration:3000, //tiempo
-		delay:800,
+		duration:2500, //tiempo
+		delay:600,
 		origin: 'bottom', //origen
 		distance: '400px', //distancia
 		
@@ -270,7 +270,7 @@ sr.reveal('.textodondeycuando', {
 	}); 
 sr.reveal('.btn', {
 		duration: 3000, //tiempo
-		delay:900,
+		delay:600,
 		origin: 'bottom', //origen
 		distance: '200px' //distancia
 
@@ -342,9 +342,9 @@ sr.reveal('.textoSeccion3', {
 
 
 	}); 
-		sr.reveal('#hotel1', {
+		sr.reveal('#regalos', {
 			duration: 2000, //tiempo
-		origin: 'top', //origen
+		origin: 'bottom', //origen
 		distance: '300px' //distancia
 
 
@@ -375,12 +375,42 @@ sr.reveal('.evitarDress', {
 
 
 	}); 
+sr.reveal('.evitarDress2', {
+		duration: 3000, //tiempo
+		delay:700,
+		origin: 'bottom', //origen
+		
+		distance: '300px' //distancia
+
+
+	}); 
 	sr.reveal('.flores', {
 		duration: 3000, //tiempo
 		delay:500,
 		origin: 'top', //origen
 		distance: '300px' //distancia
 		
+
+	});
+		sr.reveal('#leon', {
+		duration: 3000, //tiempo
+		delay:900,
+		origin: 'bottom', //origen
+		distance: '300px' //distancia
+		
+
+	});
+			sr.reveal('#musicaboton', {
+		rotate: {
+        x: 100,
+        z: 100
+    },
+		duration: 2000, //tiempo
+		//delay:1500,
+		origin: 'top', //origen
+		scale: 0.10,
+		distance: '-0' //distancia
+
 
 	});
 		sr.reveal('.pampas', {
