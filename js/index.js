@@ -344,6 +344,7 @@ sr.reveal('.textoSeccion3', {
 	}); 
 		sr.reveal('#regalos', {
 			duration: 2000, //tiempo
+			delay:700,
 		origin: 'bottom', //origen
 		distance: '300px' //distancia
 
