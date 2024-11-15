@@ -48,8 +48,8 @@ window.sr = ScrollReveal();
 
 	});
 	sr.reveal('.textoNosCasamos', {
-		duration: 2000, //tiempo
-		//delay:1500,
+		duration: 3000, //tiempo
+		delay:1500,
 		origin: 'top', //origen
 		distance: '200px', //distancia
 		
@@ -132,8 +132,8 @@ window.sr = ScrollReveal();
 
 	});
 	sr.reveal('.vestimenta', {
-		duration: 1500, //tiempo
-		///delay:1000,
+		duration: 3000, //tiempo
+		delay:1000,
 		origin: 'top', //origen
 		scale: 0.30,
 		distance: '-0' //distancia
@@ -194,16 +194,17 @@ window.sr = ScrollReveal();
 
 	}); 
 sr.reveal('.nosCasamos', {
-		duration: 1500, //tiempo
-		//delay:1500,
-		origin: 'top', //origen
-		distance: '-100px', //distancia
+		duration:3000, //tiempo
+		delay:800,
+		origin: 'bottom', //origen
+		distance: '400px', //distancia
 		
 
 	});
 
 sr.reveal('.dondeyCuando', {
-		duration: 1500, //tiempo
+		duration: 2500, //tiempo
+		delay:700,
 		origin: 'top', //origen
 		distance: '-100px', //distancia
 		
@@ -224,17 +225,60 @@ sr.reveal('.Tituloasistenciaespero', {
 
 	});
 sr.reveal('.porqueformas', {
-		duration: 1500, //tiempo
-		//delay:700,
+		duration: 2500, //tiempo
+		delay:700,
 		origin: 'top', //origen
 		scale: 0.10,
 		distance: '-0' //distancia
 
 
 	}); 
-sr.reveal('.nompadres', {
+sr.reveal('.lugar', {
 		duration: 1500, //tiempo
-		//delay:700,
+		delay:900,
+		origin: 'top', //origen
+		scale: 0.10,
+		distance: '-0' //distancia
+
+
+	}); 
+sr.reveal('.hora', {
+		duration: 1500, //tiempo
+		delay:900,
+		origin: 'bottom', //origen
+		distance: '200px' //distancia
+
+
+	}); 
+sr.reveal('.dondeycuandotitulo', {
+		duration: 1500, //tiempo
+		delay:900,
+		origin: 'top', //origen
+		scale: 0.10,
+		distance: '-0' //distancia
+
+
+	}); 
+sr.reveal('.textodondeycuando', {
+		duration: 1500, //tiempo
+		delay:900,
+		origin: 'top', //origen
+		scale: 0.10,
+		distance: '-0' //distancia
+
+
+	}); 
+sr.reveal('.btn', {
+		duration: 3000, //tiempo
+		delay:900,
+		origin: 'bottom', //origen
+		distance: '200px' //distancia
+
+
+	}); 
+sr.reveal('.nompadres', {
+		duration: 2500, //tiempo
+		delay:700,
 		origin: 'top', //origen
 		scale: 0.10,
 		distance: '-0' //distancia
@@ -322,6 +366,31 @@ sr.reveal('.textoSeccion3', {
 
 
 	}); 
+sr.reveal('.evitarDress', {
+		duration: 3000, //tiempo
+		delay:700,
+		origin: 'bottom', //origen
+		
+		distance: '300px' //distancia
+
+
+	}); 
+	sr.reveal('.flores', {
+		duration: 3000, //tiempo
+		delay:500,
+		origin: 'top', //origen
+		distance: '300px' //distancia
+		
+
+	});
+		sr.reveal('.pampas', {
+		duration: 3000, //tiempo
+		delay:500,
+		origin: 'bottom', //origen
+		distance: '300px' //distancia
+		
+
+	});
 
 	///////////////////////////////////////////////////////////////////////////////////////////7
 	// Initialize and add the map

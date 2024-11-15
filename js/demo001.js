@@ -63,14 +63,7 @@ sr.reveal('.diaBautizo', {
 		
 
 	});
-	sr.reveal('img .flores', {
-		duration: 2000, //tiempo
-		delay:500,
-		origin: 'top', //origen
-		distance: '300px' //distancia
-		
 
-	});
 	
 	sr.reveal('.cuentaRegresiva', {
 		duration: 2000, //tiempo
@@ -347,7 +340,7 @@ sr.reveal('.textoSeccion3', {
 		
 
 	});
-
+	
 	///////////////////////////////////////////////////////////////////////////////////////////7
 	// Initialize and add the map
 const playpause = document.querySelector('.playpause');
