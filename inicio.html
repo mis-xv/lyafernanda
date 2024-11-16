@@ -166,9 +166,9 @@ $(document).ready(function(){
         
     </div>   
                          <h5 class='nombres col-lg-12 text-center' >Lya Fernanda</h5> 
-                         <div class="row justify-content-center col-12" style="margin: 0 auto" >
+                        <!-- <div class="row justify-content-center col-12" style="margin: 0 auto" >
                          <img class="leon col-4 col-md-2 " id="leon" style="" src="img/leon3.png" >
-                     </div>
+                     </div>-->
 
 <div class="playpause mb-5 mt-4 " onclick="PlayAudio()"  >
     <div class="button" ></div>
@@ -328,10 +328,16 @@ $(document).ready(function(){
           </div>
         
         <h6 class='col-12 col-lg-12 mt-5 mb-2 text-center' id="regalos" style="color:#000; letter-spacing: 3px; font-family: 'Cormorant Garamond', serif; z-index: 9999;"><i class="bi bi-bank" style="color:#4D5933;" ></i><b>¡DA CLICK EN EL LOGOTIPO!</b></h6> 
+        <div class="container col-12 justify-content-center mb-0 mt-5" style="z-index: 9999;">   
+         <div class="row justify-content-center align-items-center" > 
+        <a class="tiendas col-10 col-md-6 mb-5 ml-3" href="https://www.sears.com.mx/Mesa-de-Regalos/169220/te-invito-a-mi-xv-anos-lya-fernanda"><img class="liverpool"  src="img/sears.jpg"> </a>
+        <h5 class=' col-11 col-lg-12  text-center ' style="color:black; font-family: 'Cormorant Garamond', serif; font-weight: 300; font-style: italic; font-size:20px; letter-spacing: 2px;"  >Código:169220</h5>
+    </div>  
+      </div>
        <div class="container col-12 justify-content-center mb-0 mt-5" style="z-index: 9999;">   
          <div class="row justify-content-center align-items-center" > 
-        <a class="tiendas col-10 col-md-6 mb-5 ml-3" href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51364632"><img class="liverpool"  src="img/liverpool.jpg"> </a>
-        <h5 class=' col-11 col-lg-12  text-center ' style="color:black; font-family: 'Cormorant Garamond', serif; font-weight: 300; font-style: italic; font-size:20px; letter-spacing: 2px;"  >Código:xxxxx</h5>
+        <a class="tiendas col-10 col-md-6 mb-5 ml-3" href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51561141"><img class="liverpool"  src="img/liverpool.jpg"> </a>
+        <h5 class=' col-11 col-lg-12  text-center ' style="color:black; font-family: 'Cormorant Garamond', serif; font-weight: 300; font-style: italic; font-size:20px; letter-spacing: 2px;"  >Código:51561141</h5>
     </div>  
       </div>
 
@@ -395,12 +401,12 @@ $(document).ready(function(){
    
     <div class="container col-9 col-md-5 mt-2 boletos mt-2 mb-4"  style="background-color:#CBB093"> 
         <div class="justify-content-center mb-2"><br>
-            <h6 class='familiaboleto col-12 col-lg-12 text-center' >Familia</h6> 
-            <h5 class='apellidos col-12 col-lg-12 mt-3 text-center' >XXXXXXXX</h5>
-            <h4 class='invitacionpara col-12 col-lg-12 mt-3 text-center' >Personas: 1</h4>
-            <h5 class='numMesa col-12 col-lg-12 mt-4 text-center' >Número de mesa:</h5> 
-              <h5 class='numeroPerMes col-12 col-lg-12 mt-2 text-center' >10</h5>
-            <p style="font-size: 100px; color:#fff"><i class=" fas fa-ticket-alt "></i></p>
+           <!-- <h6 class='familiaboleto col-12 col-lg-12 text-center' >Familia</h6> 
+            <h5 class='apellidos col-12 col-lg-12 mt-3 text-center' >XXXXXXXX</h5>-->
+            <h4 class='invitacionpara col-12 col-lg-12 mt-3 text-center' >Personas: 0</h4>
+            <!--<h5 class='numMesa col-12 col-lg-12 mt-4 text-center' >Número de mesa:</h5> 
+              <h5 class='numeroPerMes col-12 col-lg-12 mt-2 text-center' >10</h5>-->
+            <p style="font-size: 100px; color:#fff"><i class=" mb-2 fas fa-ticket-alt "></i></p>
                 <div class="text-center "> 
         
     </div>
@@ -430,10 +436,8 @@ $(document).ready(function(){
         <input type="hidden"  name="Contador" value="1">
         <h2 class="formulario col-12 col-lg-12 mt-4 text-left" style="font-family: 'Cormorant Garamond', serif;">De los boletos asignados ¿Cuántos vas a utilizar?</h2>
         <select name="Boletos a utilizar" class="custom-select2 col-12" id="boletos">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
+                <option value="0">0</option>
+            
         </select>
     
         <h2 class="formulario col-12 col-lg-12 mt-4 text-left" style="font-family: 'Cormorant Garamond', serif;" >Mensaje para la quinceañera</h2>
@@ -603,13 +607,20 @@ $(document).ready(function(){
     <script src="js/countdown.js"></script>
   <script src="//maps.googleapis.com/maps/api/js"></script>
   <script src="js/script.js"></script>
-  <script>
+<script>
 
- function bloquear(){
-     document.getElementById("loading").style.display = "block";
+     function bloquear(){
+         nombre = document.getElementById("nombres").value;
+         apellidos = document.getElementById("telefono").value;
+         mensaje = document.getElementById("mensaje").value;
+        //la condición
+        if (nombre.length == 0 || apellidos.length == 0 ||  mensaje.length == 0) {
+            return false;
+        }else{
+             document.getElementById("loading").style.display = "block";
      document.getElementById("botonForm").style.opacity = 0.7;
      document.getElementById("botonForm").textContent = 'Enviando espere por favor...';
-          document.getElementById("botonForm").style.zIndex=-100;
+          document.getElementById("botonForm").style.zinicio=-100;
          
       setTimeout(function () {
         document.getElementById("loading").style.display = "none";
@@ -619,10 +630,12 @@ $(document).ready(function(){
         }, 3000);
  }
 
+        }
+
  
     document.getElementById("respuestaEnviada").style.display = "none";
          let comprobar = "1";
-        let scriptURL = 'https://script.google.com/macros/s/AKfycbzrv50X2VPBwqzKJfiVaDCBZ5lhD7z7EoKIp3H9w2stbTVH5dSI5VanIRTFS305mg4Hxg/exec';
+        let scriptURL = 'https://script.google.com/macros/s/AKfycbyE832Z0ZBfuj_sLIqg3kgGrLjIcCslfkywGojX78X73KplE9EkWhsxa0g3ivfkmRc7/exec';
         let form = document.forms['submit-form'];
  
         form.addEventListener('submit', e => {
@@ -652,8 +665,9 @@ $(document).ready(function(){
         myButton.textContent = 'Enviado';
         myButton.style.opacity = 0;
         myButton.disabled = true;
-    }, 3500);      
-                     
+    }, 3500);
+                    
+                      
 document.getElementById("boletos").disabled=true;
                       document.getElementById("nombres").disabled=true;
                        document.getElementById("telefono").disabled=true;
@@ -668,10 +682,6 @@ document.getElementById("boletos").disabled=true;
                 console.error('Error', error.message)
             });
         });
-
-
- 
-
 
 function habilitar(value)
         {
@@ -723,7 +733,8 @@ function habilitar(value)
   window.addEventListener("scroll", callbackFunc);
 })();
 
-pentitle="SCSS Arrow Animation";
+    
     </script>
+
 </body>
 </html>
