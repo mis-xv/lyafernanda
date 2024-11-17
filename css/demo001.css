@@ -334,7 +334,8 @@ font-family: "Cormorant Garamond", serif;
 }
 .dia{
   color:#000;
-  font-family: 'Cormorant Garamond', serif;
+font-family: 'Arapey', serif; 
+  font-style: normal;
   font-size: 130px;
   margin-bottom: -10px;
   z-index: 9999;
@@ -448,7 +449,8 @@ font-family: "Mrs Saint Delafield", cursive;
 
 }
 .dia{
-  font-family: 'Cormorant Garamond', serif;
+font-family: 'Arapey', serif; 
+  font-style: normal;
   font-size: 100px;
   margin-bottom: -10px
 }
@@ -466,7 +468,8 @@ font-family: "Mrs Saint Delafield", cursive;
 
 }
 .dia{
-  font-family: 'Cormorant Garamond', serif;
+font-family: 'Arapey', serif; 
+  font-style: normal;
   font-size: 100px;
   margin-bottom: -10px;
 }
